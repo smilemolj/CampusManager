@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fefefe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity">
+
+    <ImageView
+        android:background="#fff"
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="center"
+        app:srcCompat="@mipmap/icon" />
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bg_edittext_psw"
+        android:drawableLeft="@mipmap/accout"
+        android:drawablePadding="16dp"
+        android:ellipsize="end"
+        android:hint="@string/hide_username"
+        android:paddingLeft="16dp"
+        android:singleLine="true"
+        android:textColorHint="@color/color_999999"
+        android:textSize="15sp"
+        android:theme="@style/CustomEditText" />
+
+    <EditText
+        android:id="@+id/pass_word"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_alignLeft="@+id/relative_layout"
+        android:layout_alignStart="@+id/relative_layout"
+        android:layout_below="@+id/user_name"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_edittext_psw"
+        android:digits="0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@."
+        android:drawableLeft="@mipmap/psw"
+        android:drawablePadding="16dp"
+        android:ellipsize="end"
+        android:hint="@string/hide_password"
+        android:inputType="textPassword"
+        android:paddingLeft="16dp"
+        android:singleLine="true"
+        android:textColorHint="@color/color_999999"
+        android:textSize="15sp"
+        android:theme="@style/CustomEditText" />
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pass_word"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/registered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户注册"
+            android:textColor="@color/theme_color"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/forget_psw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="忘记密码"
+            android:textColor="@color/color_999999"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/relative_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/login_btn_selector"
+        android:text="登入"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

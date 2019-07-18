@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff3CBAFF</color>
+    <color name="colorPrimaryDark">#ff3CBAFF</color>
+    <color name="colorAccent">#ff3CBAFF</color>
+    <color name="theme_color">#ff3CBAFF</color>
+    <color name="color_00000000">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="color_dedede">#dedede</color>
+    <color name="color_f6f6f6">#f6f6f6</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_bfbfbf">#bfbfbf</color>
+    <color name="description">#686868</color>
+    <color name="bar">#E9C517</color>
+    <color name="linefill">#DEEFE4</color>
+    <color name="default_click">#22000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="btn_isenable">#2fa881</color>
+</resources>

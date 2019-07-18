@@ -1,0 +1,53 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--自定义输入框-->
+    <style name="CustomEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/color_999999</item>
+        <item name="colorControlActivated">@color/theme_color</item>
+    </style>
+
+    <style name="DefaultClientBG">
+        <item name="android:background">@drawable/default_ripple_bg</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="DefaultTextStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_333333</item>
+    </style>
+
+    <style name="LinePoint05">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/color_dedede</item>
+    </style>
+
+    <style name="img_more_style">
+        <item name="android:layout_gravity">clip_horizontal</item>
+        <item name="android:layout_width">@dimen/dp_20</item>
+        <item name="android:layout_height">@dimen/dp_20</item>
+        <item name="android:layout_margin">@dimen/dp_10</item>
+        <item name="android:src">@mipmap/right</item>
+        <item name="android:scaleType">center</item>
+    </style>
+
+    <style name="menu.cardview" parent="">
+        <!-- 主界面卡片 -->
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="cardCornerRadius">3dp</item>
+        <item name="cardElevation">3sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <color name="color_999999">#999999</color>
+</resources>

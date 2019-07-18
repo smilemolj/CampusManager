@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/update_tv"
+        android:padding="8dp"
+        android:paddingLeft="16dp"
+        android:drawableRight="@mipmap/right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:gravity="center_vertical"
+        android:drawablePadding="8dp"
+        android:text="@string/update_version"
+        android:background="@drawable/default_ripple_bg"
+        style="@style/DefaultTextStyle"
+        tools:ignore="RtlSymmetry"
+        android:drawableEnd="@mipmap/right" />
+
+    <View style="@style/LinePoint05"/>
+
+    <TextView
+        android:id="@+id/about_tv"
+        android:padding="8dp"
+        android:paddingLeft="16dp"
+        android:drawableRight="@mipmap/right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:gravity="center_vertical"
+        android:drawablePadding="8dp"
+        android:text="@string/about"
+        android:background="@drawable/default_ripple_bg"
+        style="@style/DefaultTextStyle"
+        tools:ignore="RtlSymmetry"
+        android:drawableEnd="@mipmap/right" />
+
+    <View style="@style/LinePoint05"/>
+
+
+    <Button
+        android:id="@+id/out_login_but"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/login_btn_selector"
+        android:text="@string/out_login"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_width="300dp"
+        android:layout_height="40dp" />
+</LinearLayout>

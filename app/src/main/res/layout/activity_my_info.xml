@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MyInfoActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/headImg_but"
+        android:background="@drawable/default_ripple_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            style="@style/DefaultTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/my_head_img" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/headImg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/headimg"
+            android:layout_gravity="right"
+            android:gravity="right"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+
+    <View style="@style/LinePoint05"/>
+
+    <LinearLayout
+        android:id="@+id/nickname_but"
+        android:padding="8dp"
+        android:background="@drawable/default_ripple_bg"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/DefaultTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/nickname" />
+
+        <TextView
+            android:id="@+id/nickname_tv"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="right|center_vertical"
+            android:paddingLeft="4dp"
+            android:drawableRight="@mipmap/right"
+            android:layout_height="wrap_content"
+            android:paddingStart="4dp"
+            android:drawableEnd="@mipmap/right"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+    </LinearLayout>
+
+    <View style="@style/LinePoint05"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/sex_but"
+        android:padding="8dp"
+        android:background="@drawable/default_ripple_bg"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/DefaultTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/sex" />
+
+        <TextView
+            android:id="@+id/sex_tv"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:paddingLeft="4dp"
+            android:gravity="right|center_vertical"
+            android:drawableRight="@mipmap/right"
+            android:layout_height="wrap_content"
+            android:paddingStart="4dp"
+            android:drawableEnd="@mipmap/right"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+    </LinearLayout>
+
+    <View style="@style/LinePoint05"/>
+
+    <LinearLayout
+        android:id="@+id/birthday_but"
+        android:padding="8dp"
+        android:background="@drawable/default_ripple_bg"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/DefaultTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/birthday" />
+
+        <TextView
+            android:id="@+id/birthday_tv"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:paddingLeft="4dp"
+            android:drawableRight="@mipmap/right"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:paddingStart="4dp"
+            android:drawableEnd="@mipmap/right"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+    </LinearLayout>
+
+    <View style="@style/LinePoint05"/>
+
+    <LinearLayout
+        android:id="@+id/profession_but"
+        android:padding="8dp"
+        android:background="@drawable/default_ripple_bg"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/DefaultTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/profession" />
+
+        <TextView
+            android:id="@+id/profession_tv"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:paddingLeft="4dp"
+            android:drawableRight="@mipmap/right"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:paddingStart="4dp"
+            android:drawableEnd="@mipmap/right"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+    </LinearLayout>
+
+    <View style="@style/LinePoint05"/>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/hobby_but"
+        android:padding="8dp"
+        android:background="@drawable/default_ripple_bg"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/DefaultTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/hobby" />
+
+        <TextView
+            android:id="@+id/hobby_tv"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:paddingLeft="4dp"
+            android:drawableRight="@mipmap/right"
+            android:layout_height="wrap_content"
+            android:paddingStart="4dp"
+            android:gravity="right|center_vertical"
+            android:drawableEnd="@mipmap/right"
+            tools:ignore="RtlHardcoded,RtlSymmetry" />
+    </LinearLayout>
+
+    <View style="@style/LinePoint05"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/address_but"
+        android:padding="8dp"
+        android:background="@drawable/default_ripple_bg"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/DefaultTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/my_address" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:paddingLeft="4dp"
+            android:drawableRight="@mipmap/right"
+            android:layout_height="wrap_content"
+            android:paddingStart="4dp"
+            android:drawableEnd="@mipmap/right"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <View style="@style/LinePoint05"/>
+
+    <LinearLayout
+        android:id="@+id/alter_pwd_but"
+        android:padding="8dp"
+        android:background="@drawable/default_ripple_bg"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/DefaultTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/alter_pwd" />
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:paddingLeft="4dp"
+            android:drawableRight="@mipmap/right"
+            android:layout_height="wrap_content"
+            android:paddingStart="4dp"
+            android:drawableEnd="@mipmap/right"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <View style="@style/LinePoint05"/>
+</LinearLayout>

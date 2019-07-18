@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">智慧校园</string>
+    <string name="hide_username">用户</string>
+    <string name="hide_password">密码</string>
+    <string name="string_register">用户注册</string>
+    <string name="string_forgetpsw">忘记密码</string>
+
+    <string name="string_home">首页</string>
+    <string name="string_chat">聊天</string>
+    <string name="string_contact">联系人</string>
+    <string name="string_mine">我的</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mine">我的</string>
+    <string name="my_info">个人资料</string>
+    <string name="system_info">系统消息</string>
+    <string name="my_share">我的分享</string>
+    <string name="tool">设置</string>
+    <string name="update_version">版本更新</string>
+    <string name="about">关于</string>
+    <string name="out_login">退出登录</string>
+    <string name="my_head_img">我的头像</string>
+    <string name="nickname">昵称</string>
+    <string name="sex">性别</string>
+    <string name="birthday">生日</string>
+    <string name="profession">职业</string>
+    <string name="hobby">爱好</string>
+    <string name="my_address">我的地址</string>
+    <string name="alter_pwd">修改密码</string>
+    <string name="loan">校园门禁</string>
+    <string name="touzhi">钱包</string>
+    <string name="repayment">景点</string>
+    <string name="gongao" >校园公告栏</string>
+    <string name="gongao5">食堂就餐</string>
+    <string name="gongao4">宿舍管理</string>
+    <string name="xuefei">学费</string>
+</resources>
