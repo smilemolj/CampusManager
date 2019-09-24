@@ -48,7 +48,6 @@ public class LoginActivity1 extends BaseActivity implements ILoginView {
 
     @Override
     protected void initView(@Nullable Bundle savedInstanceState) {
-        setStatusBar=false;
     }
 
     @Override

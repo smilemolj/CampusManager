@@ -4,12 +4,11 @@
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:fitsSystemWindows="true"
     android:background="@color/theme_color"
     android:focusable="true"
     android:focusableInTouchMode="true"
     app:contentInsetLeft="0dp"
-    android:paddingTop="0dp"
+    android:paddingTop="@dimen/dp_25"
     app:contentInsetStart="0dp"
     app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
@@ -23,7 +22,6 @@
 
     <TextView
         android:id="@+id/title"
-        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"

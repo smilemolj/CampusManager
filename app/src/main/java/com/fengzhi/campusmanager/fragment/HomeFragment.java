@@ -61,7 +61,7 @@ public class HomeFragment extends BaseFragment {
     protected void initView(LayoutInflater inflater, ViewGroup container,
                             final Bundle savedInstanceState) {
         title.setText(R.string.app_name);
-        titleBack.setVisibility(View.GONE);
+        titleBack.setVisibility(View.INVISIBLE);
         initFunctionDatas();
         initData();
 

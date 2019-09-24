@@ -29,7 +29,6 @@ public abstract class SlideBackBaseActivity extends SwipeBackActivity {
     protected Context mContext;
     protected Toast toast;
     protected Unbinder unbinder;
-    protected boolean setStatusBar = true;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -50,14 +49,11 @@ public abstract class SlideBackBaseActivity extends SwipeBackActivity {
             Window window = getWindow();
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            if (setStatusBar) {
-                window.setStatusBarColor(App.getInstance().getResources().getColor(R.color.theme_color));
-            } else {
-                //将View全屏
-                window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
-                //将状态栏改成背景色改成透明的
-                window.setStatusBarColor(Color.TRANSPARENT);
-            }
+            //将View全屏
+            window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                    | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
+            //将状态栏改成背景色改成透明的
+            window.setStatusBarColor(Color.TRANSPARENT);
         }
     }
 

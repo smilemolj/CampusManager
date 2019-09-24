@@ -48,7 +48,7 @@ public class ChatFragment extends BaseFragment {
     protected void initView(LayoutInflater inflater, ViewGroup container,
                             Bundle savedInstanceState) {
         title.setText(R.string.string_chat);
-        titleBack.setVisibility(View.GONE);
+        titleBack.setVisibility(View.INVISIBLE);
         recyclerView.setLayoutManager(new LinearLayoutManager(mContext));
         initData();
         messageAdapter = new MessageAdapter(R.layout.msg_list_item, messageBeans);

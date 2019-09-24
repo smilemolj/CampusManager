@@ -33,7 +33,6 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void initView(@Nullable Bundle savedInstanceState) {
         //手动设置状态栏颜色
-        setStatusBar = true;
         BottomNavigationViewHelper.disableShiftMode(mBottomNaigation);
         mBottomNaigation.setSelectedItemId(mBottomNaigation.getMenu().getItem(FARGMENT_HOME).getItemId());
         mBottomNaigation.setSelectedItemId(R.id.action_home);

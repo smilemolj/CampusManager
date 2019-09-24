@@ -48,7 +48,7 @@ public class ContactFragment extends BaseFragment {
     protected void initView(LayoutInflater inflater, ViewGroup container,
                             Bundle savedInstanceState) {
         title.setText(R.string.string_contact);
-        titleBack.setVisibility(View.GONE);
+        titleBack.setVisibility(View.INVISIBLE);
         recyclerView.setLayoutManager(new LinearLayoutManager(mContext));
         initData();
         contactAdapter = new ContactAdapter(R.layout.item_contact, contactBeans);
