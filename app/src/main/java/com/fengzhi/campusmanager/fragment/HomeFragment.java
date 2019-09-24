@@ -170,7 +170,7 @@ public class HomeFragment extends BaseFragment {
     private View showLineView() {
         View view = LayoutInflater.from(mContext).inflate(R.layout.item_view, null);
         TextView textView = view.findViewById(R.id.line_view);
-        textView.setBackgroundResource(R.color.color_f6f6f6);
+        textView.setBackgroundResource(R.color.color_f1f1f1);
         return view;
     }
 

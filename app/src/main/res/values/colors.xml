@@ -17,4 +17,5 @@
     <color name="transparent">#00000000</color>
     <color name="black">#000000</color>
     <color name="btn_isenable">#2fa881</color>
+    <color name="color_f1f1f1">#F1F1F1</color>
 </resources>

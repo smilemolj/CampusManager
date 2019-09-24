@@ -1,28 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="@dimen/dp_1"
-    android:background="@drawable/default_ripple_bg"
-    android:orientation="vertical"
-    android:padding="@dimen/dp_1">
 
-    <ImageView
-        android:id="@+id/function_img"
+    android:layout_marginLeft="4sp"
+    android:layout_marginTop="2dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginBottom="2dp"
+    android:clickable="true"
+
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardBackgroundColor="#ffffff"
+    card_view:cardCornerRadius="5dp"
+    android:translationZ="5dp"
+    card_view:cardElevation="2dp"
+    >
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/dp_4"
-        android:layout_marginRight="@dimen/dp_4"
-        android:paddingTop="@dimen/dp_2"
-        android:src="@mipmap/loan" />
+        android:background="@drawable/default_ripple_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_2">
 
-    <TextView
-        android:id="@+id/function_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:paddingBottom="@dimen/dp_4"
-        android:textColor="@color/color_333333"
-        android:textSize="16sp" />
+        <ImageView
+            android:id="@+id/function_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_4"
+            android:layout_marginRight="@dimen/dp_4"
+            android:paddingTop="@dimen/dp_2"
+            android:src="@mipmap/loan" />
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/function_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/dp_4"
+            android:textColor="@color/color_333333"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
